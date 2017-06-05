@@ -33,4 +33,4 @@ eval "$(rbenv init -)"
 
 # Iron Yard Specific Stuff
 alias iron='~/Documents/fullStack'
-alias sb='Projects/Sandbox/playground'
+alias sb='~/Projects/Sandbox/playground'
