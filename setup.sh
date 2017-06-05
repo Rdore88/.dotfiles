@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/.dotfiles
@@ -26,18 +26,13 @@ echo "${GREEN}>>>>> Finished - Installing Home Brew${NC}"
 
 # Install Applications with Homebrew
 echo "${YELLOW}>>>>> Starting Brew Bundle${NC}"
-# brew bundle
+brew bundle
 echo "${GREEN}>>>>> Finished - Brew Bundle${NC}"
 
 # Add Applications to Dock
 echo "${YELLOW}>>>>> Adding Applications to Dock${NC}"
-# sh $scripts/dock.sh
+sh $scripts/dock.sh
 echo "${GREEN}>>>>> Finished - Adding Applications to Dock${NC}"
-
-# Install prezto
-# echo "${YELLOW}>>>>> Configuring Prezto${NC}"
-# sh $scripts/prezto.sh
-# echo "${GREEN}>>>>> Finished - Configuring Prezto${NC}"
 
 # create dotfiles_old in homedir
 echo "${CYAN}>>>>> Creating $olddir for backup of any existing dotfiles in ~${NC}"
@@ -58,6 +53,11 @@ echo "${GREEN}>>>>> Finished - Moving existing dotfiles from ~ to $olddir \n${NC
 # change back to .dotfiles directory
 echo "${CYAN}>>>>> Heading back to .dotfiles directory${NC}"
 cd ..
+
+# Install prezto
+echo "${YELLOW}>>>>> Configuring Prezto${NC}"
+zsh $scripts/prezto.sh
+echo "${GREEN}>>>>> Finished - Configuring Prezto${NC}"
 
 # Copy over Atom Information
 echo "${YELLOW}>>>>> Linking Atom configuration files${NC}"
@@ -82,8 +82,4 @@ echo "${GREEN}>>>>> Finished - Installing Atom Packages${NC}"
 
 echo ""
 echo ""
-echo "${YELLOW}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
-echo "${YELLOW}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
-echo "${GREEN}>>>>> INSTALLATION COMPLETE <<<<<${NC}"
-echo "${CYAN}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
-echo "${CYAN}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
+echo "${GREEN}I${CYAN}n${YELLOW}s${GREEN}t${CYAN}a${YELLOW}l${GREEN}l${CYAN}a${YELLOW}t${GREEN}i${CYAN}o${YELLOW}n ${GREEN}C${CYAN}o${YELLOW}m${GREEN}p${CYAN}l${YELLOW}e${GREEN}t${CYAN}e${YELLOW}!"
