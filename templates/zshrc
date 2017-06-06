@@ -16,7 +16,8 @@ alias v='vim .'
 alias yolo='git push origin master && git push heroku master'
 alias dot='~/.dotfiles'
 alias desk='~/Desktop'
-
+alias del='rm -rf'
+alias grade='atom . && open index.html'
 
 # Git Shortcuts
 alias gp="git push origin"

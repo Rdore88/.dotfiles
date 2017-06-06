@@ -29,6 +29,7 @@
   editor:
     fontSize: 12
     invisibles: {}
+    showIndentGuide: true
   "exception-reporting":
     userId: "4900a116-4f89-cf2f-f613-27294d516994"
   "file-icons": {}
