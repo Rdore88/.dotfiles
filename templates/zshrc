@@ -18,6 +18,9 @@ alias dot='~/.dotfiles'
 alias desk='~/Desktop'
 alias del='rm -rf'
 alias html='atom . && open index.html'
+alias newhtml='mkdir css js && touch index.html css/style.css js/main.js'
+alias npmgrade='npm install && atom .'
+alias npmsetup='touch main.js && npm init && npm install express --save && npm install nodemon --save && atom .'
 
 # Git Shortcuts
 alias gp="git push origin"
