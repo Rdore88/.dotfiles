@@ -30,12 +30,16 @@
     fontSize: 12
     invisibles: {}
     showIndentGuide: true
+    softWrap: true
   "exception-reporting":
     userId: "4900a116-4f89-cf2f-f613-27294d516994"
   "file-icons": {}
   linter: {}
   "linter-jshint": {}
+  "linter-ui-default":
+    panelHeight: 81
   minimap:
+    displayMinimapOnLeft: true
     plugins:
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0

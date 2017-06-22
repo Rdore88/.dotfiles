@@ -20,7 +20,9 @@ alias del='rm -rf'
 alias html='atom . && open index.html'
 alias newhtml='mkdir css js && touch index.html css/style.css js/main.js'
 alias npmgrade='npm install && atom .'
-alias npmsetup='touch main.js && npm init && npm install express --save && npm install nodemon --save && atom .'
+alias npmsetup='mkdir public public/css views && touch app.js public/css/style.css && npm init && npm install express nodemon --save && atom .'
+alias npmpack='npm install mustache mustache-express body-parser express-validator express-session --save'
+alias npmall='npmsetup && npmpack'
 
 # Git Shortcuts
 alias gp="git push origin"
