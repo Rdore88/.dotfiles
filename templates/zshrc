@@ -25,7 +25,7 @@ alias npmpack='npm install mustache mustache-express body-parser express-validat
 alias npmall='npmsetup && npmpack'
 
 # Git Shortcuts
-alias gp="git push origin"
+alias gp="git push"
 alias gc="git commit"
 alias ga="git add ."
 alias gs="git status"
