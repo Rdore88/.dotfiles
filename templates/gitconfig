@@ -1,11 +1,11 @@
 [user]
-	email = bricerb@gmail.com  # Update with Your Information
-	name = Brice Blanch  # Update with Your Information
+	email = rdore88@gmail.com  # Update with Your Information
+	name = Robby Dore  # Update with Your Information
 [core]
   editor = vim
-	excludesfile = /Users/Brice/.gitignore_global # Update with Your Information
+	excludesfile = /Users/robbydore/.gitignore_global # Update with Your Information
 [github]
-  user = bricerb  # Update with Your Information
+  user = Rdore88  # Update with Your Information
 [color]
   ui = true
 [format]
