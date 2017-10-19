@@ -23,6 +23,8 @@ alias npmgrade='npm install && atom .'
 alias npmsetup='mkdir public public/css views && touch app.js public/css/style.css && npm init && npm install express nodemon --save && atom .'
 alias npmpack='npm install mustache mustache-express body-parser express-validator express-session --save'
 alias npmall='npmsetup && npmpack'
+alias runreact='./bin/webpack-dev-server'
+
 
 # Git Shortcuts
 alias gp="git push"

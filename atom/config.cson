@@ -22,12 +22,8 @@
       "editorconfig"
     ]
     telemetryConsent: "no"
-    themes: [
-      "dracula-ui"
-      "dracula-syntax"
-    ]
   editor:
-    fontSize: 12
+    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     softWrap: true
@@ -48,5 +44,7 @@
     forceOverwrite: true
   tabs:
     usePreviewTabs: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
