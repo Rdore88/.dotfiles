@@ -24,14 +24,24 @@ alias npmsetup='mkdir public public/css views && touch app.js public/css/style.c
 alias npmpack='npm install mustache mustache-express body-parser express-validator express-session --save'
 alias npmall='npmsetup && npmpack'
 alias runreact='./bin/webpack-dev-server'
+alias newhtml='mkdir css js && touch index.html css/style.css js/main.js'
+
+alias code-maat="java -jar '$PWD/code-maat/target/code-maat-1.1-SNAPSHOT-standalone.jar'"
+alias code-maat-analysis="code-maat -h | egrep -o '\([^)]+\)' | head -1 | perl -pe 's/,//g;' -e 's/[()]//g;'"
+alias bnr-practice="~/BNR/practice"
 
 
 # Git Shortcuts
 alias gp="git push"
 alias gc="git commit"
-alias ga="git add ."
+alias ga="git add"
 alias gs="git status"
-
+alias gpom="git pull origin master"
+alias gcom="git checkout master"
+alias pr="hub pull-request"
+alias gd="git diff"
+alias gco="git checkout"
+alias gl="git log"
 # Waiting Dots
 COMPLETION_WAITING_DOTS="true"
 
@@ -39,10 +49,8 @@ COMPLETION_WAITING_DOTS="true"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# Iron Yard Specific Stuff
-alias iron='~/Documents/fullStack'
-alias sb='~/Projects/Sandbox/playground'
-
+#Java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
