@@ -23,13 +23,14 @@
     ]
     telemetryConsent: "no"
   editor:
-    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     softWrap: true
   "exception-reporting":
     userId: "4900a116-4f89-cf2f-f613-27294d516994"
   "file-icons": {}
+  "git-blame":
+    columnWidth: 416
   linter: {}
   "linter-jshint": {}
   "linter-ui-default":
